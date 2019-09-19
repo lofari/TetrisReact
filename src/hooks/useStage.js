@@ -4,7 +4,6 @@ import { createStage } from "../gameHelpers";
 export const useStage = (player, resetPlayer) => {
   const [stage, setStage] = useState(createStage());
 
-  console.log(resetPlayer);
   useEffect(() => {
     const updateStage = prevStage => {
       // flush stage
